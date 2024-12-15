@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEPHYR2K24</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header >
+    <nav class="head">
+      <div class="logo">
+        <a href="home.html">ZEPHYR</a>
+      </div>
+      <div class="nav-links">
+        <a href="event.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <a href="https://www.madhaengineeringcollege.com/">
+            <img src="https://www.madhaengineeringcollege.com/wp-content/uploads/2022/06/hlogo.png" alt="Madha Engineering College" class="logo-image">
+        </a>
+    </div>    
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Zephyr 2K24</h1>
+        <p>Embrace the National Level Symosium Conducted by<br>Department of CSE,IT and CSBS of Madha Engineering College<br><span class="red">- on 25th April -</span></p>
+        <div id="countdown">
+          <div class="countdown-item">
+            <span id="days">00</span>
+            <p>Days</p>
+          </div>
+          <div class="countdown-item">
+            <span id="hours">00</span>
+            <p>Hours</p>
+          </div>
+          <div class="countdown-item">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+          </div>
+          <div class="countdown-item">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+          </div>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSUb3uCgRVB29KndNExOYfutLVNJwVC27geI2wO03szHx9ZQ/viewform?vc=0&c=0&w=1&flr=0"><button>Register Now</button></a>
+      <br> <br> <br> <br> 
+    </div>
+      <div class="background-video">
+        <video autoplay loop muted>
+          <source src="vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <section class="news-section">
+      <div class="news-card">
+        <div class="news-content">
+          <div>
+            <span class="red-text">Registration Fee - ₹100</span>
+          </div>
+        </div>
+        <div>
+          <p>Last Date of Registration is on 24-04-2024 - 23:59pm</p>
+        </div>
+      </div>
+    </section>
+    </main>
+  <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/people/Zephyr2k24/61558255682012/?mibextid=qi2Omg&rdid=327iI1IkArCh9wwW"><img src="fb.png" alt="Facebook"></a>
+      <a href="https://twitter.com/Zephyr2k24?t=jCRbgou_H6b1suXsRYgzew&s=09"><img src="x.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/zephyr2k24/?igsh=b25pNG54dXJkMXFp&utm_source=qr"><img src="insta.png" alt="Instagram"></a>
+      <!-- Add more social media icons and links as needed -->
+    </div>
+    <p>&copy; ZEPHYR2K24</p>
+  </footer>
+  <script>
+    // Set the date we're counting down to (April 25, 2024)
+    var countDownDate = new Date("Apr 25, 2024 00:00:00").getTime();
+  
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+  
+      // Get today's date and time
+      var now = new Date().getTime();
+  
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+  
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+      // Output the result in an element with id="countdown"
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+  
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Symposium is Live!";
+      }
+    }, 1000);
+  </script>
+  
+</body>
+</html>
