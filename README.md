@@ -21,20 +21,20 @@ Welcome to the official repository for the **Zephyr2k24 Symposium Website**! Thi
 
 ---
 ## Installation & Usage
-1.Clone the repository:
+- 1.Clone the repository:
 git clone https://github.com/your-username/Zephyr2k24.git
-2.Navigate to the project directory:
+- 2.Navigate to the project directory:
 cd Zephyr2k24
-3.Open the index.html file in your preferred browser to explore the website.
+- 3.Open the index.html file in your preferred browser to explore the website.
 
 ---
 ## 🎯 Contribution
 Contributions are welcome! If you'd like to improve the website, please follow these steps:
-1.Fork the repository.
-2.Create a new branch:
+- 1.Fork the repository.
+- 2.Create a new branch:
 git checkout -b feature-branch-name
-3.Make your changes and commit them:
+- 3.Make your changes and commit them:
 git commit -m "Add your message here"
-4.Push to the branch:
+- 4.Push to the branch:
 git push origin feature-branch-name
-5.Open a Pull Request.
+- 5.Open a Pull Request.
